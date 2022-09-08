@@ -140,17 +140,21 @@ export function printFlattedEvents(log: Txlog.TransactionNode) {
     } else {
       console.log(`Emitted by ${event.codeAddress} on behalf of ${event.address}:`);
     }
-    console.log(
-      util.inspect(
-        new Codec.Export.LogDecodingInspector(decoding),
-        {
-          depth: null,
-          colors: true,
-          maxArrayLength: null,
-          breakLength: 80
-        }
-      )
-    );
+    if (decoding) {
+      console.log(
+        util.inspect(
+          new Codec.Export.LogDecodingInspector(decoding),
+          {
+            depth: null,
+            colors: true,
+            maxArrayLength: null,
+            breakLength: 80
+          }
+        )
+      );
+    } else {
+      console.log("Warning: Could not decode event.");
+    }
     console.log();
   }
 }
