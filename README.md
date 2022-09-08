@@ -52,3 +52,8 @@ This repository serves to provide a fairly basic demonstration of running
    ```typescript
    printFlattedEvents(txlog);
    ```
+
+<details>
+   <summary>See example usage with output</summary>
+   <img width="703" alt="Screen Shot 2022-09-08 at 6 27 23 PM" src="https://user-images.githubusercontent.com/151065/189236995-3888541b-aa8c-4e54-9ce5-f41ee5d1613a.png">
+</details>
