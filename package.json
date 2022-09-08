@@ -1,0 +1,21 @@
+{
+  "name": "txlog-demo",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "prepare": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.16",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@truffle/codec": "^0.14.4",
+    "@truffle/debugger": "^11.0.7",
+    "@truffle/fetch-and-compile": "^0.5.17",
+    "web3": "^1.7.5"
+  }
+}
